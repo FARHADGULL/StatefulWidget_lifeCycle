@@ -1,6 +1,6 @@
 //Min Functionality
 import 'package:flutter/material.dart';
-import 'package:new_project/language/controller.dart';
+import 'package:new_project/posts/controller.dart';
 import 'model.dart';
 
 class PostWidget extends StatefulWidget {

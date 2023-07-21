@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:new_project/language/view.dart';
+import 'package:new_project/posts/view.dart';
 
 
-import 'language/model.dart';
+import 'posts/model.dart';
 void main() {
   runApp(const MyApp());
 }

@@ -1,4 +1,4 @@
-import 'package:new_project/language/model.dart';
+import 'package:new_project/posts/model.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 

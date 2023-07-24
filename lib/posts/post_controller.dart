@@ -3,7 +3,6 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class PostController {
-  //List<dynamic> posts = [];
   final PostModel model;
   final UserSettings userSettings;
 

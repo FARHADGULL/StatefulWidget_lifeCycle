@@ -15,7 +15,7 @@ class LanguageView extends GetView<LanguageController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Language Selection'),
+        title: const Text('Language Selection'),
       ),
       body: ListView.builder(
         itemCount: _languageController.availableLanguages.length,

@@ -1,5 +1,6 @@
 //Min Functionality
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:new_project/posts/post_controller.dart';
 import 'post_model.dart';
 
@@ -38,7 +39,10 @@ class _PostWidgetState extends State<PostWidget> {
       appBar: AppBar(
         title: Text('Posts'),
       ),
-      body: FutureBuilder(
+      body: Column(
+  children: [
+    Expanded(
+      child: FutureBuilder(
         future: _controller.fetchPosts(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -46,13 +50,23 @@ class _PostWidgetState extends State<PostWidget> {
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else {
-            // Adjusted this line to use `_controller.posts` instead of `_controller.model.posts`
             return _controller.model.posts.isEmpty
                 ? Center(child: Text('No posts found.'))
                 : _buildPostList(_controller.model.posts);
           }
         },
       ),
+    ),
+    ElevatedButton(
+      onPressed: () {
+        // Navigate to the "language_view" screen when the button is pressed
+        Get.toNamed('/language_view');
+      },
+      child: Text('Go to Language View'),
+    ),
+  ],
+),
+
     );
   }
 

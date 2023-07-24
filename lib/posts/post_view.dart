@@ -1,7 +1,7 @@
 //Min Functionality
 import 'package:flutter/material.dart';
-import 'package:new_project/posts/controller.dart';
-import 'model.dart';
+import 'package:new_project/posts/post_controller.dart';
+import 'post_model.dart';
 
 class PostWidget extends StatefulWidget {
   final UserSettings userSettings;

@@ -37,7 +37,7 @@ class _PostWidgetState extends State<PostWidget> {
     print('Step 4: build - Building the UI');
     return Scaffold(
       appBar: AppBar(
-        title: Text('Posts'),
+        title: const Text('Posts'),
       ),
       body: Column(
   children: [

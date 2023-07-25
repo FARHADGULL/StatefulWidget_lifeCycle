@@ -51,7 +51,7 @@ class _PostWidgetState extends State<PostWidget> {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else {
             return _controller.model.posts.isEmpty
-                ? Center(child: Text('No posts found.'))
+                ? const Center(child: Text('No posts found.'))
                 : _buildPostList(_controller.model.posts);
           }
         },

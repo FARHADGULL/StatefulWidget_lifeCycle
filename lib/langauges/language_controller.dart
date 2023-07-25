@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-
 import 'language_model.dart';
 
 class LanguageController extends GetxController {

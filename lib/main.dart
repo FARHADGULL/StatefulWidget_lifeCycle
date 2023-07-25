@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/posts/post_view.dart';
 import 'package:get/get.dart';
-
-
 import 'langauges/language_view.dart';
 import 'posts/post_model.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +11,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the root of my application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(

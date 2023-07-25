@@ -15,7 +15,7 @@ class LanguageView extends GetView<LanguageController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Language Selection'),
+        title: const Text('Select Language'),
       ),
       body: ListView.builder(
         itemCount: _languageController.availableLanguages.length,
@@ -28,7 +28,7 @@ class LanguageView extends GetView<LanguageController> {
             },
             title: Text(language.name),
             leading: Obx(() {
-              // Show a checkmark for the selected language
+              // Showing a checkmark for the selected language
               return _languageController.selectedLanguage.value == language
                   ? Icon(Icons.check)
                   : SizedBox.shrink();

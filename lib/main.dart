@@ -20,9 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true, 
       ),
-      // home: PostWidget(
-      //   userSettings: UserSettings(language: 'en'),
-
+      
       initialRoute: '/posts',
       getPages: [
         GetPage(name: '/posts', page: () => PostWidget(userSettings: UserSettings(language: 'en'))),

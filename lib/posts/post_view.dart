@@ -59,10 +59,9 @@ class _PostWidgetState extends State<PostWidget> {
     ),
     ElevatedButton(
       onPressed: () {
-        // Navigate to the "language_view" screen when the button is pressed
         Get.toNamed('/language_view');
       },
-      child: Text('Go to Language View'),
+      child: const Text('Go to Language View'),
     ),
   ],
 ),

@@ -7,9 +7,10 @@ import 'post_model.dart';
 class PostWidget extends StatefulWidget {
   final UserSettings userSettings;
 
-  PostWidget({required this.userSettings});
+  const PostWidget({super.key, required this.userSettings});
 
   @override
+  // ignore: library_private_types_in_public_api
   _PostWidgetState createState() => _PostWidgetState();
 }
 

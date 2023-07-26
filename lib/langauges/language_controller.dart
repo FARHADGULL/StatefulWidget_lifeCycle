@@ -14,5 +14,6 @@ class LanguageController extends GetxController {
 
   void selectLanguage(LanguageModel language) {
     selectedLanguage.value = language;
+    print('Language changed to ${language.name}.');
   }
 }

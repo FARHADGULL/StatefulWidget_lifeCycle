@@ -35,6 +35,15 @@ class PostController {
     } else if (userSettings.language == 'fr') {
       print('Step 3: didChangeDependencies - Language preference changed to French.');
       // Performing actions specific to French language preference
+    } else if (userSettings.language == 'de') {
+      print('Step 3: didChangeDependencies - Language preference changed to German.');
+      // Performing actions specific to German language preference
+    } else if (userSettings.language == 'es') {
+      print('Step 3: didChangeDependencies - Language preference changed to Spanish.');
+      // Performing actions specific to Spanish language preference
+    } else if (userSettings.language == 'zh') {
+      print('Step 3: didChangeDependencies - Language preference changed to Chinese.');
+      // Performing actions specific to Chinese language preference
     }
   }
 

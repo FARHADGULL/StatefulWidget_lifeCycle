@@ -31,10 +31,10 @@ class PostController {
   void handleLanguageChange() {
     if (userSettings.language == 'en') {
       print('Step 3: didChangeDependencies - Language preference changed to English.');
-      // Perform actions specific to English language preference
+      // Performing actions specific to English language preference
     } else if (userSettings.language == 'fr') {
       print('Step 3: didChangeDependencies - Language preference changed to French.');
-      // Perform actions specific to French language preference
+      // Performing actions specific to French language preference
     }
   }
 

@@ -30,8 +30,8 @@ class LanguageView extends GetView<LanguageController> {
             leading: Obx(() {
               // Showing a checkmark for the selected language
               return _languageController.selectedLanguage.value == language
-                  ? Icon(Icons.check)
-                  : SizedBox.shrink();
+                  ? const Icon(Icons.check)
+                  : const SizedBox.shrink();
             }),
           );
         },
